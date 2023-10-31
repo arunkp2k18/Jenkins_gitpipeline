@@ -16,9 +16,7 @@ pipeline{
                 sh 'cp -r . /tmp'
             }
         }
-		
-		stage{
-		}
+
             stage('Stage2'){
             steps{
                 echo "echo Stage2"
