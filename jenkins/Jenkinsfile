@@ -1,6 +1,11 @@
 pipeline{
     agent any
     stages{
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
         stage('Stage1'){
             steps{
                 echo "echo Stage1"
